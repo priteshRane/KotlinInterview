@@ -7,7 +7,7 @@ private fun getNumbersArray(): IntArray {
     return numbers
 }
 
-private fun getNumberToFine(): Int {
+private fun getNumberToFind(): Int {
     print("Enter number to Find: ")
     val number = readLine()?.toInt()
     println("Entered number is: $number")
@@ -20,6 +20,6 @@ fun checkForNumberContains(numbersArray: IntArray, numberToFind: Int) {
 
 fun main() {
     val numbersArray = getNumbersArray()
-    val numberToFind = getNumberToFine()
+    val numberToFind = getNumberToFind()
     checkForNumberContains(numbersArray, numberToFind)
 }
